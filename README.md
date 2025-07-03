@@ -1,24 +1,47 @@
-# README
+🧠 Chat Room — Multi-User Messaging with Rails
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+📌 Overview
+This project is a practice build for creating a real-time chat room using Ruby on Rails. It’s designed to simulate multiple users interacting in shared rooms, exploring the foundations of live messaging and session management.
 
-Things you may want to cover:
+🛠️ Tech Stack
+Framework: Ruby on Rails
 
-* Ruby version
+Languages: Ruby, JavaScript, HTML, CSS
 
-* System dependencies
+Frontend: ERB templates, Bootstrap
 
-* Configuration
+Realtime Tools: Action Cable (planned), WebSockets (optional)
 
-* Database creation
+Database: SQLite / PostgreSQL
 
-* Database initialization
+🚀 Features (Planned / In Progress)
+Multi-user chat room interface
 
-* How to run the test suite
+Message broadcasting across sessions
 
-* Services (job queues, cache servers, search engines, etc.)
+User authentication and session tracking
 
-* Deployment instructions
+Room creation and joining logic
 
-* ...
+Live updates via Action Cable or polling
+
+📁 Structure Highlights
+app/controllers/messages_controller.rb: Handles message flow
+
+app/models/message.rb: Stores chat content
+
+app/views/chat/index.html.erb: UI for chat room
+
+config/routes.rb: Routing for chat actions
+
+🧪 How to Run Locally
+bash
+git clone https://github.com/AdityaChavan2681/Chat-room.git
+cd Chat-room
+bundle install
+rails db:create db:migrate
+rails server
+Visit http://localhost:3000 to explore the chat interface.
+
+🧠 Reflection
+This project helped me explore real-time communication patterns, user session logic, and the architecture behind scalable chat systems. It’s a sandbox for learning how Rails can power dynamic, multi-user interactions.
